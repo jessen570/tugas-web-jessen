@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Desain Web</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #00c0e0;
+            border: 8px solid white; 
+        }
+        header {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 20px;
+        }
+        nav {
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+            padding: 10px;
+            font-size: 24px;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 20px;
+            color: black;
+        }
+        main {
+            display: flex;
+            padding: 10px;
+        }
+        .sidebar {
+            width: 350px; 
+            margin-right: 10px;
+        }
+        .box {
+            margin-bottom: 15px;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+            color: black; 
+        }
+        .calendar {
+            background-color: lime;
+            height: 180px; 
+        }
+        .ads {
+            background-color: #cc0066;
+            height: 70px;
+            width: 200px; 
+        }
+        .content {
+            flex-grow: 1;
+            background-color: #00c0e0;
+            border: 1px solid white;
+            padding: 20px;
+        }
+        .content h2 {
+            text-align: center;
+        }
+        footer {
+            border-top: 2px solid white;
+            text-align: center;
+            padding: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>DESAIN WEB</header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+    </nav>
+
+    <main>
+        <div class="sidebar">
+            <div class="box calendar">Calender</div>
+            <div class="box ads">Iklan</div>
+            <div class="box ads">Iklan</div>
+        </div>
+        <div class="content">
+            <h2>Layout</h2>
+            <p>
+                Dalam dunia desain, Layout berbicara mengenai bagaimana penataan elemen-elemen dalam sebuah halaman dengan benar. 
+                Sama seperti tipografi, terdapat sangat banyak elemen-elemen pada layout, yang tentunya tidak akan dapat dibahas 
+                pada bagian ini sendiri. Pembahasan layout secara menyeluruh akan memerlukan bukunya tersendiri. 
+                Kita akan hanya melihat elemen-elemen layout yang umumnya ditemukan pada dokumen web, dan bagaimana membuat 
+                elemen-elemen tersebut dengan HTML dan CSS.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        Copyright © 2012 Desain Web Class
+    </footer>
+</body>
+</html>
