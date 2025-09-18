@@ -1,101 +1,109 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>Desain Web</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Times New Roman', Times, serif;
-            background-color: #00c0e0;
-            border: 8px solid white; 
-        }
-        header {
-            text-align: center;
-            font-size: 32px;
-            font-weight: bold;
-            padding: 20px;
-        }
-        nav {
-            border-top: 2px solid white;
-            border-bottom: 2px solid white;
-            padding: 10px;
-            font-size: 24px;
-        }
-        nav a {
-            text-decoration: none;
-            margin: 0 20px;
-            color: black;
-        }
-        main {
-            display: flex;
-            padding: 10px;
-        }
-        .sidebar {
-            width: 350px; 
-            margin-right: 10px;
-        }
-        .box {
-            margin-bottom: 15px;
-            padding: 10px;
-            text-align: center;
-            border: 1px solid black;
-            color: black; 
-        }
-        .calendar {
-            background-color: lime;
-            height: 180px; 
-        }
-        .ads {
-            background-color: #cc0066;
-            height: 70px;
-            width: 200px; 
-        }
-        .content {
-            flex-grow: 1;
-            background-color: #00c0e0;
-            border: 1px solid white;
-            padding: 20px;
-        }
-        .content h2 {
-            text-align: center;
-        }
-        footer {
-            border-top: 2px solid white;
-            text-align: center;
-            padding: 5px;
-            font-size: 14px;
-        }
-    </style>
-</head>
-<body>
-    <header>DESAIN WEB</header>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-    </nav>
-
-    <main>
-        <div class="sidebar">
-            <div class="box calendar">Calender</div>
-            <div class="box ads">Iklan</div>
-            <div class="box ads">Iklan</div>
-        </div>
-        <div class="content">
+<html>
+    <head>
+        <title>Tugas Web Layouting</title>
+        <style type="text/css">
+            body{
+                width: 960px;
+            }
+            header, nav, aside, article, footer{
+                background-color: #14BCE6;
+                border: 1px solid rgb(255, 255, 255);
+                color: black;
+                font-size: 30px;
+                text-align: center;
+            }
+            header, nav, footer{
+                width: 100%;
+            }
+            header{
+                    line-height: 100px;
+                    text-align: center; 
+            }
+            header, footer{
+                height: 100px;
+            }
+            nav{
+                height: 35px;
+                text-align: left;
+                align-items: center;
+                display: flex;
+            }
+            nav p{
+                display: inline;
+                margin: 10px;
+                line-height: 35px;
+                font-size: 28px;
+            }
+            aside{
+                float: left;
+                height: 255px;
+                width: 29.5%;
+            }
+            .calender {
+                background: lime;
+                font-size: medium;
+                height: 125px;
+                margin: 8px;
+                line-height:normal;
+                color: black;
+            }
+            .iklan {
+                background: mediumvioletred;
+                font-size: medium;
+                height: 50px;
+                margin:  8px;
+                line-height: normal;
+                color: black;
+            }
+            article {
+                float: right;
+                height: 255px;
+                width: 70%;
+                line-height: normal; 
+            }
+            
+            article h2 {
+                text-align: center;
+                margin-top: 0;
+                font-size: 1em;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            
+            article p {
+                font-size: small;
+                text-align: justify;
+                line-height: 1.5;        
+                margin: 0;              
+                padding: 0 10px 0 10px; 
+            }
+            
+            footer{
+                clear: both;
+                width: 100%;
+                font-size: small;
+                margin-top: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <header><b>DESAIN WEB</b></header>
+        <nav>
+            <p>Home</p>
+            <p>About</p>
+        </nav>
+        <aside>
+            <div class ="calender"><b>Calender</b></div>
+            <div class ="iklan"><b>Iklan</b></div>
+            <div class ="iklan"><b>Iklan</b></div>
+        </aside>
+        <article>
             <h2>Layout</h2>
             <p>
-                Dalam dunia desain, Layout berbicara mengenai bagaimana penataan elemen-elemen dalam sebuah halaman dengan benar. 
-                Sama seperti tipografi, terdapat sangat banyak elemen-elemen pada layout, yang tentunya tidak akan dapat dibahas 
-                pada bagian ini sendiri. Pembahasan layout secara menyeluruh akan memerlukan bukunya tersendiri. 
-                Kita akan hanya melihat elemen-elemen layout yang umumnya ditemukan pada dokumen web, dan bagaimana membuat 
-                elemen-elemen tersebut dengan HTML dan CSS.
+                Dalam dunia desain, Layout berbicara mengenai bagaimana penataan elemen-elemen dalam sebuah halaman dengan benar. Sama seperti tipografi, terdapat sangat banyak elemen-elemen pada layout, yang tentunya tidak akan dapat dibahas pada bagian ini sendiri. Pembahasan layout secara menyeluruh akan memerlukan bukunya tersendiri. Kita akan hanya mehhat elemen-elemen layout yang umumnya ditemukan pada dokumen web, dan bagaimana membuat elemen-elemen tersebut dengan HTML dan CSS.
             </p>
-        </div>
-    </main>
-
-    <footer>
-        Copyright © 2012 Desain Web Class
-    </footer>
-</body>
+        </article>
+        <footer>Copyright © 2025 Desain Web Class</footer>
+    </body>
 </html>
